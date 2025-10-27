@@ -201,10 +201,12 @@ app.use((error, req, res, next) => {
   });
 });
 
+module.exports = app;
+
 // Start server
-app.listen(PORT, () => {
-  console.log(`🚀 Zeal-IT Backend Server running on port ${PORT}`);
-  console.log(`📧 Email service: ${process.env.EMAIL_SERVICE || 'gmail'}`);
-  console.log(`📬 Sending emails to: tijinamariamtitus@gmail.com`);
-  console.log(`🌐 CORS enabled for: ${process.env.FRONTEND_URL || 'http://localhost:3000'}`);
-});
+// app.listen(PORT, () => {
+//   console.log(`🚀 Zeal-IT Backend Server running on port ${PORT}`);
+//   console.log(`📧 Email service: ${process.env.EMAIL_SERVICE || 'gmail'}`);
+//   console.log(`📬 Sending emails to: tijinamariamtitus@gmail.com`);
+//   console.log(`🌐 CORS enabled for: ${process.env.FRONTEND_URL || 'http://localhost:3000'}`);
+// });
