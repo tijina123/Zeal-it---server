@@ -27,13 +27,13 @@ const createTransporter = () => {
 };
 
 // Health check endpoint
-app.get('/api/health', (req, res) => {
-  res.json({ 
-    status: 'OK', 
-    timestamp: new Date().toISOString(),
-    message: 'Zeal-IT Backend Server is running'
-  });
-});
+// app.get('/api/health', (req, res) => {
+//   res.json({ 
+//     status: 'OK', 
+//     timestamp: new Date().toISOString(),
+//     message: 'Zeal-IT Backend Server is running'
+//   });
+// });
 
 // Contact form endpoint
 app.post('/api/contact', async (req, res) => {
